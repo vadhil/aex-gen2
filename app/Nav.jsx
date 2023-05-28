@@ -1,28 +1,36 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 
 export default function Nav() {
   const [color, setColor] = useState(false)
     const changeColor = () => {
-        if (window.scrollY >= 670 ) {
+        // 680
+        if (window.scrollY >= 580 ) {
             setColor(true)
         } else {
             setColor(false)
         }
     }
-    window.addEventListener('scroll', changeColor)
-    let transparent = `bg-tranparent  fixed
-    top-0 text-white w-screen
+    useEffect(() => {
+        window.addEventListener('scroll', changeColor);
+        return () => {
+          window.removeEventListener('scroll', changeColor);
+        };
+      }, []);
+    // useEffect(()=>{
+    //   }, [click])
+    let transparent = `bg-transparent fixed
+    top-0 text-white w-screen duration-300 transition-all
     p-11`
-    let real = `bg-white   fixed
+    let real = `bg-white fixed duration-300 transition-all
     top-0 text-primary w-screen
     p-11` 
 
 
   return (
     <header className={color? real : transparent}>
-     <div className="flex justify-between ">
+     <div className="flex justify-between  ">
 
     <div className="logo text-">Logo</div>
     <nav className="ms-aut  hidden gap-4 md:flex">

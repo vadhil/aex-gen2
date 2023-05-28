@@ -5,6 +5,8 @@ import Card from "./components/Card";
 import { motion } from "framer-motion";
 
 export default function Home() {
+
+  
   return (
       <>
         <Hero />
@@ -12,8 +14,9 @@ export default function Home() {
             <h3 className="text-2xl text-primary
             text-center p-5 font-bold">TESTIMONI</h3>
           <div className=" h-screen w-screen flex justify-center
-           bg-green-100 items-center">
-              <div className="text">
+           bg-green-100 items-center 
+           hover:bg-green-500 duration-300 transition-colors ease-in">
+              <div className="text ">
                 Client dari berbagai macam background dan bisnis telah 
                 merasakan manfaatnya
               </div>
