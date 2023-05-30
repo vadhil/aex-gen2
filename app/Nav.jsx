@@ -28,10 +28,10 @@ export default function Nav() {
     // useEffect(()=>{
     //   }, [click])
     let transparent = ` ${click ? "bg-transparent" : "bg-white delay-0 duration-0"} fixed
-    top-0 text-white w-screen duration-300 transition-all 
-    p-8`
-    let real = `bg-white shadow fixed duration-300 transition-all
-    top-0 text-primary w-screen
+    top-0 text-white w-screen duration-150 transition-all ease-in
+    p-8 h-[7rem]`
+    let real = `bg-white shadow fixed duration-150 transition-all ease-in
+    top-0 h-[6rem] lg:h-[7rem] text-primary w-screen
     p-8` 
 
 
@@ -39,7 +39,8 @@ export default function Nav() {
     // <section className={sofia.className}>
     <header className={color? real : transparent}>
      <div className="grid grid-cols-2 justify-between  items-center">
-    <div className={`logo title ${color? 'text-primary': 'text-secondary'}  font-black text-3xl px-4`}>
+    <div className={`logo title ${color? 'text-primary': 'text-secondary'} 
+     font-black text-3xl  `}>
       <h2>AEX</h2>
     </div>
     <div className={`px-4 flex ms-auto md:hidden ${!click && 'text-primary'}`}>

@@ -6,6 +6,7 @@ import Pertanyaan from "./pertanyaan";
 import Pink from "./Pink";
 import Pricing from "./Pricing";
 import Choose from "./Choose";
+import Kelebihan from "./Kelebihan";
 
 export default function Home() {
  
@@ -15,7 +16,7 @@ export default function Home() {
       <>
         <Hero />
        <CtaCard/>
-       <Choose />
+       <Kelebihan />
        <Pricing />
        <Pink />
        <Pertanyaan/>

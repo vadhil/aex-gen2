@@ -11,7 +11,7 @@ const albert = Albert_Sans({ subsets: ['latin'] })
 // const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'AEX Digital - Jasa Pembuatan Website',
+  title: 'AEX Digital - Jasa Pembuatan Website Terpercaya',
   description: 'Jasa pembuatan website terbaik, unik dan premium. AEX Digital solusi kebutuhan website anda. Menyediakan website landing page, blog dan marketplace',
 }
 
