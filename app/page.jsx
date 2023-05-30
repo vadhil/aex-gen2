@@ -1,16 +1,33 @@
 import Link from "next/link";
-import Pertanyann from "./pertanyaan";
 import Hero from "./Hero";
-import Card from "./components/Card";
+import Card, { CtaCard } from "./components/Card";
 import { motion } from "framer-motion";
+import Pertanyaan from "./pertanyaan";
+import Pink from "./Pink";
+import Pricing from "./Pricing";
+import Choose from "./Choose";
 
 export default function Home() {
+ 
 
   
   return (
       <>
         <Hero />
-        <section className="py-9 mx-auto  testimoni-section">
+       <CtaCard/>
+       <Choose />
+       <Pricing />
+       <Pink />
+       <Pertanyaan/>
+      </>
+  )
+}
+
+
+
+
+
+      {/* <section className="py-9 mx-auto  testimoni-section">
             <h3 className="text-2xl text-primary
             text-center p-5 font-bold">TESTIMONI</h3>
           <div className=" h-screen w-screen flex justify-center
@@ -25,9 +42,4 @@ export default function Home() {
               
               </div> 
           </div>
-        </section>
-       {/* <Pertanyann/> */}
-       {/* <Card /> */}
-      </>
-  )
-}
+        </section> */}

@@ -1,10 +1,46 @@
-import React from 'react'
+"use client"
+import { motion } from "framer-motion";
 
-export default function Pertanyann() {
+
+export default function Pertanyaan() {
+  const CardVariantsLeft = {
+    offscreen: {
+        x: -300,
+        rotate: 0
+    },
+    onscreen: {
+        x: 0,
+        rotate: 0,
+        transition: {
+            type: "spring",
+            bounce: 0.4,
+            duration: 0.8
+        }
+    }
+}
   return (
     <section className="h-screen py-9">
-    <h3 className="text-lg font-semibold px-10 text-primary text-center">
-      PERTANYAAN-PERTANYAAN TENTANG PEMBUATAN WEBSITE</h3>
+      <motion.div className="container  mx-auto bg-warnin"
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true, amount: 0.8}}
+        >
+
+    <div className="flex justify-center">
+    <motion.h3 variants={CardVariantsLeft} className=" 
+    sub-title-primary 
+    ">
+      QNA WEBSITE</motion.h3>
+    </div>
+    <div className="flex justify-center">
+    <motion.h3
+     initial={{ opacity: 0, y: 15}}
+     whileInView={{ opacity: 1, y: 0}}
+    transition={{delay: 0.5, duration: 0.5}}
+    viewport={{ once: true, amount: 0.8}}
+    className="sub-title-primary" >
+      QNA WEBSITE</motion.h3>
+    </div>
     <div class="max-w-lg mx-auto p-8 flex flex-col gap-3">
         <details class="open:bg-white border p-4 dark:open:bg-slate-900 open:ring-1 open:ring-black/5
          dark:open:ring-white/10 open:shadow-lg rounded-lg" open>
@@ -16,7 +52,7 @@ export default function Pertanyann() {
           </div>
         </details>
         <details class="open:bg-white border p-4 dark:open:bg-slate-900 open:ring-1 open:ring-black/5
-         dark:open:ring-white/10 open:shadow-lg rounded-lg" open>
+         dark:open:ring-white/10 open:shadow-lg rounded-lg" close>
           <summary class="text-sm leading-6  text-slate-900 dark:text-white font-semibold select-none">
             Apa yang akan saya dapatkan?
           </summary>
@@ -24,7 +60,8 @@ export default function Pertanyann() {
             <p>yang perlu anda persiapkan hanya ide dan kami akan mewujudkan ide tersebut</p>
           </div>
         </details>
-    </div>
+    </div> 
+           </motion.div>
     </section>
   )
 }
