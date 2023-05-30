@@ -1,13 +1,14 @@
+import { Analytics } from '@vercel/analytics/react';
 import Footer from './Footer'
-import Header from './Header'
+// import Header from './Header'
 import Nav from './Nav'
 import './globals.css'
 import { Albert_Sans} from 'next/font/google'
-import { Sofia_Sans, Montserrat} from 'next/font/google'
+// import { Sofia_Sans, Montserrat} from 'next/font/google'
 
 const albert = Albert_Sans({ subsets: ['latin'] })
-const sofia = Sofia_Sans({ subsets: ['latin'] })
-const montserrat = Montserrat({ subsets: ['latin'] })
+// const sofia = Sofia_Sans({ subsets: ['latin'] })
+// const montserrat = Montserrat({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'AEX Digital - Jasa Pembuatan Website',
@@ -23,6 +24,7 @@ export default function RootLayout({ children }) {
         <Nav />
         {children}
         <Footer/>
+        <Analytics />
         </main>
         </body>
     </html>
