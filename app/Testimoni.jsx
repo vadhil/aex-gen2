@@ -44,7 +44,7 @@ let gradient = "bg-gradient-to-r from-primary to-blue-400"
       gap-5 md:gap-10 px-6 md:px-36
         ">  <div className="px-5 md:px-12 pt-2 order-2 ">
             <p className='text-xl text-center md:text-center '>
-            More than 1300 people have experienced growth and benefited from Smart English Training. Dont hesitate to join us and <span className='font-semibold'> Become One Of Them!</span>
+            Lebih dari puluhan bisnis telah sukses berkembang bersama kami. Jangan ragu menjadikan bisnis anda<span className='font-semibold'> menjadi salah satu diantaranya!</span>
             </p>
 
         </div>
