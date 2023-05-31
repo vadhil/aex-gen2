@@ -1,10 +1,11 @@
+import Image from "next/image";
 
 export function CtaCard() {
   return (
     <div class="max-w-md border-2 mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl">
       <div class="md:flex">
     <div class="md:shrink-0  grayscale ">
-      <img className="h-48 w-full object-cover/ md:h-full md:w-full"
+      <Image width={48} height={48} className="h-48 w-full object-cover/ md:h-full md:w-full"
        src="/vercel.svg" alt="Modern building architecture"/>
     </div>
     <div class="p-8">

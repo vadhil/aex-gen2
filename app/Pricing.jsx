@@ -1,6 +1,5 @@
 "use client"
 import { motion } from 'framer-motion'
-// import { IoIosAlarm } from "react-icons/io";
 import { FiCheck } from "react-icons/fi";
 import Link from 'next/link'
 import React from 'react'
