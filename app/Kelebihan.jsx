@@ -18,8 +18,9 @@ export default function Kelebihan() {
             </div>
           <div className="text-card p-4 flex flex-col absolute 
           justify-center items-center/ top-[7rem] text-center  ">
-            <h4 className="text-xl font-black text-indigo-500/ ">{title}</h4>
-            <p className="group-hover:animate-pulse">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            <h4 className="text-xl font-black text-[#545572] /text-[#22293e] ">{title}</h4>
+            <p className="group-hover:animate-pulse text-[#22293e]/
+             text-[#545572]">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Voluptate saepe quaerat porro nihil corporis reiciendis?</p>
           </div>
       </div>

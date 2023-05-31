@@ -9,6 +9,8 @@ export default function Pink() {
 
 return (
 <section className="bg-secondary py-16 ">
+  <div className="bg-secondary shadow-sm">
+
     <h2 className="sub-title-primary">KONSULTASI GRATIS UNTUK MENCIPTAKAN <br /> 
     WEB IMPIANMU</h2>
     <p className=" text-center text-gray-500 py-5">Beritahukan kepada kami 
@@ -41,6 +43,7 @@ return (
                 <button className="button-primary mt-5">Kirim</button>
               </div>
         </form>
+    </div>
     </div>
 
 
