@@ -12,12 +12,12 @@ const albert = Albert_Sans({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'AEX Digital - Jasa Pembuatan Website Terpercaya',
-  description: 'Jasa pembuatan website terbaik, unik dan premium. AEX Digital solusi kebutuhan website anda. Menyediakan website landing page, blog dan marketplace',
+  description: 'Jasa pembuatan website Premium, Bayar sekali seumur hidup. AEX Digital solusi kebutuhan website anda. Menyediakan website landing Page, Blog dan Marketplace',
 }
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className='scroll-smooth'>
       <body className={albert.className}>
         {/* <Header /> */}
         <main className='relative'>

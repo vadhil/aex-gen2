@@ -1,6 +1,5 @@
 "use client"
 import { motion } from 'framer-motion'
-import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -8,19 +7,18 @@ export default function Pricing() {
  
   const ecommerce = ["One time Purchased", "Basic Design",
   "3 halaman website", 
-  "1x revisi design", "Maintenance", "Panel Admin"]
+  "1x revisi", "Maintenance", "Panel Admin"]
   const landingPage = ["One time Purchased", "Basic Design",
   "3 halaman website", 
   "1x revisi design", "Maintenance", ]
   const premiumLandingPage = ["One time Purchased", "Premium Design",
-  "5 halaman website", "Halaman Internasional", 
-  "1x revisi design", "Maintenance", ]
+  "5 halaman website", "Translation", "Database Client",  
+  "2x revisi design", "Maintenance", ]
   const undangan = [
     "One time Purchased", "Basic Design",
-  "3 halaman website", 
+  "1 halaman website",  
   "1x revisi design", "Maintenance",
   ]
-  // const undangan = ["heell", "jka"]
     const Card = (src, title, array, price) => {
       
         return (
@@ -80,7 +78,7 @@ export default function Pricing() {
     <h3 className="sub-title-primary">PRICING</h3>
     </div>
     <div className="price-container 
-    flex flex-wrap justify-center gap-5">
+    flex flex-wrap justify-center items-center gap-16">
       <motion.div
        initial={{ opacity: 0, y: 15}}
        whileInView={{ opacity: 1, y: 0}}

@@ -1,7 +1,7 @@
 import Image from "next/image"
 
 export default function Kelebihan() {
-    const Card = (src, title) => {
+    const Card = (src, title, content) => {
         return (
           <div className="CARD group border-primary border- 
           border-spacing-5 p-4/ rounded-lg shadow-md hover:shadow-xl
@@ -20,8 +20,7 @@ export default function Kelebihan() {
           justify-center items-center/ top-[7rem] text-center  ">
             <h4 className="text-xl font-black text-[#545572] /text-[#22293e] ">{title}</h4>
             <p className="group-hover:animate-pulse text-[#22293e]/
-             text-[#545572]">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Voluptate saepe quaerat porro nihil corporis reiciendis?</p>
+             text-[#545572]">{content}</p>
           </div>
       </div>
         )
@@ -37,11 +36,11 @@ export default function Kelebihan() {
                 Kami tidak hanya fokus pada <span className="text-primary">jasa pembuatan website</span>, tetapi juga memberikan layanan modifikasi desain website yang dapat meningkatkan kinerja bisnis Anda di Indonesia</h3>
         </div>
             <div className="card-box flex flex-wrap justify-center lg:mx-[10rem]  gap-3">
-                {Card("/3drocket.png", "Anti Lemot", "")}
-                {Card("/3dwww.png", "SEO Friendly", "")}
-                {Card("/responsive.png", "Responsive", "spin")}
-                {Card("/unique-design.png", "Design Unik dan Premium", "spin")}
-                {Card("/maintenance.png", "Gratis Maintenance", "spin")}
+                {Card("/3drocket.png", "Anti Lemot", "Bebas dari keterlambatan, jasa pembuatan website kami menawarkan kecepatan tanpa hambatan.")}
+                {Card("/3dwww.png", "SEO Friendly", "Mengoptimalkan peringkat pencarian, kami menciptakan website yang ramah SEO untuk keberhasilan online Anda.")}
+                {Card("/responsive.png", "Responsive", "Tampil sempurna di setiap perangkat, desain responsif kami menjawab kebutuhan pengguna mobile.")}
+                {Card("/unique-design.png", "Design Premium", "Kesempurnaan visual, website dengan desain premium yang memukau akan meningkatkan citra merek Anda.")}
+                {Card("/maintenance.png", "Gratis Maintenance", "Lebih dari sekadar pembuatan, kami juga menyediakan layanan perawatan website yang andal.")}
             </div>
     </div> 
     </section>

@@ -52,7 +52,7 @@ export default function Nav() {
     "flex flex-col justify-end/ text-end/ md:col-span-2/ lg:flex lg:order-2 justify-self-stretch lg:flex-row lg:py-0 lg:rounded-none bg-white items-center/ py-5 rounded-lg/ text-primary"} `}>
      <Link className='' href={'/'}>Translate</Link>
      <Link href={'/'}>Tentang kami</Link>
-     <Link href={'#pink'} className=''>
+     <Link href='#pink' scroll={false} className=''>
         { Button("Konsultasi Gratis")}
      </Link>
      

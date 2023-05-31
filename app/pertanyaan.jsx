@@ -26,12 +26,12 @@ export default function Pertanyaan() {
         viewport={{ once: true, amount: 0.8}}
         >
 
-    <div className="flex justify-center">
+    {/* <div className="flex justify-center">
     <motion.h3 variants={CardVariantsLeft} className=" 
     sub-title-primary 
     ">
       QNA WEBSITE</motion.h3>
-    </div>
+    </div> */}
     <div className="flex justify-center">
     <motion.h3
      initial={{ opacity: 0, y: 15}}
@@ -72,7 +72,7 @@ export default function Pertanyaan() {
             Apa yang akan saya dapatkan?
           </summary>
           <div class="mt-3 text-sm  text-slate-600 dark:text-slate-400">
-            <p>yang perlu anda persiapkan hanya ide dan kami akan mewujudkan ide tersebut</p>
+            <p>Website yang telah terpublish dan semua fitur dari paket yang anda pilih</p>
           </div>
         </details>
     </div> 

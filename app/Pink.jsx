@@ -23,7 +23,7 @@ export default function Pink() {
 
 return (
 <section className="bg-secondary py-16 " id="pink">
-  <div className="bg-secondary shadow-sm">
+  <div className="bg-secondary shadow-sm/">
 
     <h2 className="sub-title-primary">KONSULTASI GRATIS UNTUK MENCIPTAKAN <br /> 
     WEB IMPIANMU</h2>
