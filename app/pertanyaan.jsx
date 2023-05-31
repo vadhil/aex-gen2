@@ -19,7 +19,7 @@ export default function Pertanyaan() {
     }
 }
   return (
-    <section className="h-screen py-9">
+    <section className=" py-9">
       <motion.div className="container  mx-auto bg-warnin"
         initial="offscreen"
         whileInView="onscreen"
@@ -36,45 +36,74 @@ export default function Pertanyaan() {
     <motion.h3
      initial={{ opacity: 0, y: 15}}
      whileInView={{ opacity: 1, y: 0}}
-    transition={{delay: 0.5, duration: 0.5}}
-    viewport={{ once: true, amount: 0.8}}
+    transition={{delay: 0.2, duration: 0.5}}
+    viewport={{ once: true, amount: 0.5}}
     className="sub-title-primary" >
       PERTANYAAN TENTANG PEMBUATAN WEBSITE</motion.h3>
     </div>
     <div class="max-w-4xl mx-auto p-8 flex flex-col gap-3">
-        <details class="open:bg-white border p-4
+        <motion.details 
+             initial={{ opacity: 0, y: 15}}
+             whileInView={{ opacity: 1, y: 0}}
+            transition={{delay: 0.3, duration: 0.5}}
+            viewport={{ once: true, amount: 0.5}}
+        class="open:bg-white border p-4
          open:ring-1 open:ring-black/5 
          open:shadow-lg rounded-lg" open>
           <summary class="md:text-lg text-md /
-           text-slate-700 dark:text-white font-semibold 
+           text-slate-700 font-semibold 
            select-none">
-            Mengapa Sata butuh Website ?
+            Mengapa Saya butuh Website ?
           </summary>
-          <div class="mt-3 text-sm  md:text-md  text-slate-600 dark:text-slate-400">
-            <p>yang perlu anda persiapkan hanya ide dan kami akan mewujudkan ide tersebut</p>
+          <div class="mt-3 text-sm  md:text-md  text-slate-600">
+            <p>Memiliki website memiliki banyak keuntungan, bukan hanya memperluas jangkaun bisnis anda, tapi juga 
+             membuat bisnis anda terlihat lebih profesional.</p>
           </div>
-        </details>
-        <details class="open:bg-white border p-4
+        </motion.details>
+        <motion.details 
+             initial={{ opacity: 0, y: 15}}
+             whileInView={{ opacity: 1, y: 0}}
+            transition={{delay: 0.3, duration: 0.5}}
+            viewport={{ once: true, amount: 0.5}} class="open:bg-white border p-4
          open:ring-1 open:ring-black/5 
-         open:shadow-lg rounded-lg" open>
-          <summary class="md:text-lg text-md  
-           text-slate-700 dark:text-white font-semibold 
-           select-none">
-            Apa yang perlu dipersiapkan?
-          </summary>
-          <div class="mt-3 text-sm  md:text-md  text-slate-600 dark:text-slate-400">
-            <p>yang perlu anda persiapkan hanya ide dan kami akan mewujudkan ide tersebut</p>
-          </div>
-        </details>
-        <details class="open:bg-white border p-4 open:ring-1 open:ring-black/5
          open:shadow-lg rounded-lg" close>
-          <summary class="md:text-lg text-md text-slate-600 dark:text-white font-semibold select-none">
-            Apa yang akan saya dapatkan?
+          <summary class="md:text-lg text-md  
+           text-slate-700 font-semibold 
+           select-none">
+          Apa yang perlu dipersiapkan?
           </summary>
-          <div class="mt-3 text-sm  text-slate-600 dark:text-slate-400">
-            <p>Website yang telah terpublish dan semua fitur dari paket yang anda pilih</p>
+          <div class="mt-3 text-sm  md:text-md  text-slate-600 ">
+          <p>yang perlu anda persiapkan hanya ide dan kami akan mewujudkan ide tersebut.</p>
           </div>
-        </details>
+        </motion.details>
+        <motion.details 
+             initial={{ opacity: 0, y: 15}}
+             whileInView={{ opacity: 1, y: 0}}
+            transition={{delay: 0.6, duration: 0.5}}
+            viewport={{ once: true, amount: 0.5}} class="open:bg-white border p-4 open:ring-1 open:ring-black/5
+         open:shadow-lg rounded-lg" close>
+          <summary class="md:text-lg text-md text-slate-600 font-semibold select-none">
+          Apa yang akan saya dapatkan?
+          </summary>
+          <div class="mt-3 text-sm  text-slate-600 ">
+            <p>Website yang telah terpublish dan semua fitur dari paket yang kamu pilih.</p>
+          </div>
+        </motion.details>
+        <motion.details 
+             initial={{ opacity: 0, y: 15}}
+             whileInView={{ opacity: 1, y: 0}}
+            transition={{delay: 0.8, duration: 0.5}}
+            viewport={{ once: true, amount: 0.5}} class="open:bg-white border p-4 open:ring-1 open:ring-black/5
+         open:shadow-lg rounded-lg" close>
+          <summary class="md:text-lg text-md text-slate-600 font-semibold select-none">
+          Apakah terdapat biaya tambahan?
+          </summary>
+          <div class="mt-3 text-sm  text-slate-600 ">
+            <p>Tidak. Tidak ada biaya tambahan dalam pembuatan website. Biaya yang mungkin anda keluarkan hanya <span className="text-black font-semibold"> untuk perpanjangan domain  </span>anda
+            pada tahun berikutnya sebesar +-Rp.150k (domain .com).  
+            </p>
+          </div>
+        </motion.details>
     </div> 
            </motion.div>
     </section>

@@ -4,8 +4,7 @@ export default function Kelebihan() {
     const Card = (src, title, content) => {
         return (
           <div className="CARD group border-primary border- 
-          border-spacing-5 p-4/ rounded-lg shadow-md hover:shadow-xl
-          
+          border-spacing-5 p-4/ rounded-lg shadow-md hover:shadow-xl z-10
           relative duration-150 transition-shadow ease-in
           overflow-hidden 
            h-[18rem] w-[18rem] 64 bg-white">
