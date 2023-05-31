@@ -4,6 +4,7 @@ import Footer from './Footer'
 import Nav from './Nav'
 import './globals.css'
 import { Albert_Sans} from 'next/font/google'
+import Navbar from './Navbar';
 // import { Sofia_Sans, Montserrat} from 'next/font/google'
 
 const albert = Albert_Sans({ subsets: ['latin'] })
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
         {/* <Header /> */}
         <main className='relative'>
         <Nav />
+        {/* <Navbar /> */}
         {children}
         <Footer/>
         <Analytics />

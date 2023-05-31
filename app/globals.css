@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+.albert{
+  /* font-family: 'Albert Sans', sans-serif; */
+  }
+  
+
 html{
   scroll-behavior: smooth;
 }
@@ -47,4 +52,7 @@ html{
   hover:text-white hover:bg-black  p-3 px-14 rounded-none shadow-md 
   hover:px-14 transition-all duration-200 ease-in
   font-semibold  -tracking-normal hover:tracking-wider
+}
+.click{
+  @apply flex flex-col z-50  lg:flex lg:order-2 justify-self-stretch lg:flex-row lg:py-0 lg:rounded-none bg-white  py-5  text-primary
 }

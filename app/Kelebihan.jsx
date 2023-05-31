@@ -8,10 +8,10 @@ export default function Kelebihan() {
           relative duration-150 transition-shadow ease-in
           overflow-hidden 
            h-[18rem] w-[18rem] 64 bg-white">
-          <div className={`img-card rounded-full py-5 flex group-hover:animate-${animate}`}>
+          <div className={`img-card rounded-full py-5 flex /group-hover:animate-${animate}`}>
           <Image width={130} height={130} src={src} 
-          className={`mx-auto p-5 group-hover:animate-bounce/
-           transition-all animate-/ duration-300 animate-bounce/
+          className={`mx-auto p-5 group-hover:animate-bounce
+           transition-all  duration-300 animate-bounce/
             ease-in delay-100`} alt="" />
             </div>
           <div className="text-card p-4 flex flex-col absolute 

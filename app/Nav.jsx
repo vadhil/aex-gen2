@@ -2,6 +2,8 @@
 import React, { useEffect, useState } from 'react'
 import Link from 'next/link'
 import { Button } from './components/Button'
+import styles from './Navbar.module.css';
+
 // import { Sofia_Sans} from 'next/font/google'
 // const sofia = Sofia_Sans({ subsets: ['latin'] })
 
@@ -43,13 +45,25 @@ export default function Nav() {
      font-black px-4 lg:px-9 text-2xl lg:text-3xl  `}>
       <Link className='z-100' href={'/'}><h2>AEX</h2></Link>
     </div>
+
+
     <div className={`px-9 flex ms-auto lg:hidden ${!click && 'text-primary'}`}>
-     <button type="checkbox" onClick={()=> setClick(!click)}>menu</button>
+    <input onClick={()=> setClick(!click)} type="checkbox"
+     className={`${styles.navigation__checkbox}`} 
+    id="navi-toggle"/>
+     {/* <button type='checkbox' className={` ${styles.navigation__checkbox}`} 
+     id="navi-toggler"
+     onClick={()=> setClick(!click)}/> */}
+     {/* </button> */}
+    <label for="navi-toggle" className={styles.navigation__button}>
+        <span className={styles.navigation__icon}>&nbsp;</span>
+      {/* menu */}
+    </label>
     </div>
     <nav className={`mt-2 md:mt-0 col-span-2 lg:px-9 md:col-span-1 md:ms-auto
-     text-md font-normal px-4 duration-500 transition-all text-center items-center gap-4 lg:flex
+     text-md font-normal px-4 group-checked:bg-red-500 duration-500 transition-all text-center items-center gap-4 lg:flex
      ${click ? "hidden " :
-    "flex flex-col justify-end/ z-50 text-end/ md:col-span-2/ lg:flex lg:order-2 justify-self-stretch lg:flex-row lg:py-0 lg:rounded-none bg-white items-center/ py-5 rounded-lg/ text-primary"} `}>
+    "click"} `}>
      <Link className='' href={'/'}>Translate</Link>
      <Link href={'/'}>Tentang kami</Link>
      <Link href='#pink' scroll={false} className=''>
