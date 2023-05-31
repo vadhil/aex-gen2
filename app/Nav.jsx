@@ -41,13 +41,13 @@ export default function Nav() {
      <div className="grid grid-cols-2 justify-around /justify-stretch px-  items-center">
     <div className={`logo title ${color? 'text-primary': 'text-secondary'} 
      font-black px-4 lg:px-9 text-2xl lg:text-3xl  `}>
-      <h2>AEX</h2>
+      <Link href={'/'}><h2>AEX</h2></Link>
     </div>
     <div className={`px-9 flex ms-auto lg:hidden ${!click && 'text-primary'}`}>
      <button type="checkbox" onClick={()=> setClick(!click)}>menu</button>
     </div>
     <nav className={`mt-2 md:mt-0 col-span-2 lg:px-9 md:col-span-1 md:ms-auto
-     text-md font-normal px-4 duration-500 transition-all items-center gap-4 lg:flex
+     text-md font-normal px-4 duration-500 transition-all text-center items-center gap-4 lg:flex
      ${click ? "hidden " :
     "flex flex-col justify-end/ text-end/ md:col-span-2/ lg:flex lg:order-2 justify-self-stretch lg:flex-row lg:py-0 lg:rounded-none bg-white items-center/ py-5 rounded-lg/ text-primary"} `}>
      <Link className='' href={'/'}>Translate</Link>

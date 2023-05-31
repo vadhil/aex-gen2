@@ -9,14 +9,10 @@ import { useRouter } from "next/navigation";
 
 export default function Form() {
   const [name, setName] = useState('');
-  const [date, setDate] = useState('');
-  const [address, setAddress] = useState('');
   const [email, setEmail] = useState('');
-  const [job, setJob] = useState('');
   const [number, setNumber] = useState('');
-  const [need, setNeed] = useState('');
   const [getInfo, setGetInfo] = useState('');
-  const ref = collection(db, "newStudents");
+  const ref = collection(db, "newClients");
   const router = useRouter();
 
   const handleCreate = (e) =>{
@@ -24,21 +20,13 @@ export default function Form() {
        addDoc(ref, {
           createdAt: serverTimestamp(),
           name,
-          date,
-          address,
           email,
-          job,
           number,
-          need,
           getInfo
       })   
     setName('')
-    setDate('')
-    setAddress('')
     setEmail('')
-    setJob('')
     setNumber('')
-    setNeed('')
     setGetInfo('')
     router.push('/')
   }
@@ -103,6 +91,26 @@ export default function Form() {
                 />
               </label>
                 <label class="block">
+                <span class="text-gray-700">Paket Website</span>
+                <select required
+                onChange={(e)=> setGetInfo(e.target.value)} value={getInfo}
+                  class="
+                    block
+                    w-full
+                    p-2
+                    mt-1
+                    rounded-md
+                    bg-gray-100
+                    border-transparent
+                    focus:border-gray-500 focus:bg-red-100 focus:ring-0
+                  ">
+                  <option >Landing Page</option>
+                  <option >Premium Landing Page</option>
+                  <option >Undangan</option>
+                  <option >E-Commerce</option>
+                </select>
+              </label>
+                <label class="block">
                 <span class="text-gray-700">Tahu AEX Digital dari?</span>
                 <select required
                 onChange={(e)=> setGetInfo(e.target.value)} value={getInfo}
@@ -141,14 +149,10 @@ export default function Form() {
                 </select>
               </label> */}
                 <button 
-                // whileHover={{ scale: 1.1}}
-                // whileTap={{ scale: 0.8}}
                 className='button-primary mt-4'>
                 kirim</button>
             </form>
             <button 
-                // whileHover={{ scale: 1.1}}
-                // whileTap={{ scale: 0.8}}
                 className='bg-red-20 px- p- 
                 font-semibold text-center 
                 rounded-full mt-9'>
