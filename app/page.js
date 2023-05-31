@@ -7,6 +7,7 @@ import Pink from "./Pink";
 import Pricing from "./Pricing";
 import Choose from "./Choose";
 import Kelebihan from "./Kelebihan";
+import Testimoni from "./Testimoni";
 
 export default function Home() {
  
@@ -18,6 +19,7 @@ export default function Home() {
        {/* <CtaCard/> */}
        <Kelebihan />
        <Pricing />
+       <Testimoni />
        <Pink />
        <Pertanyaan/>
       </>

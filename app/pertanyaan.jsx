@@ -100,7 +100,7 @@ export default function Pertanyaan() {
           </summary>
           <div class="mt-3 text-sm  text-slate-600 ">
             <p>Tidak. Tidak ada biaya tambahan dalam pembuatan website. Biaya yang mungkin anda keluarkan hanya <span className="text-black font-semibold"> untuk perpanjangan domain  </span>anda
-            pada tahun berikutnya sebesar +-Rp.150k (domain .com).  
+            pada tahun berikutnya hanya sebesar +-Rp.16k (domain .xyz, .info) atau +-Rp.150k (domain .com).  
             </p>
           </div>
         </motion.details>

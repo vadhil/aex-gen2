@@ -107,7 +107,8 @@ export default function Form() {
                   <option >Landing Page</option>
                   <option >Premium Landing Page</option>
                   <option >Undangan</option>
-                  <option >E-Commerce</option>
+                  {/* <option >E-Commerce</option> */}
+                  <option >Custom</option>
                 </select>
               </label>
                 <label class="block">

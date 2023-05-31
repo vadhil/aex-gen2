@@ -1,5 +1,7 @@
 "use client"
 import { motion } from 'framer-motion'
+// import { IoIosAlarm } from "react-icons/io";
+import { FiCheck } from "react-icons/fi";
 import Link from 'next/link'
 import React from 'react'
 
@@ -11,8 +13,8 @@ export default function Pricing() {
   const landingPage = ["One time Purchased", "Basic Design",
   "3 halaman website", 
   "1x revisi design", "Maintenance", ]
-  const premiumLandingPage = ["One time Purchased", "Premium Design",
-  "5 halaman website", "Translation", "Database Client",  
+  const premiumLandingPage = ["One time Purchased", "Premium Design", "Full Animasi",
+  "5 halaman website", "Translation", "Data Pelanggan",  
   "2x revisi design", "Maintenance", ]
   const undangan = [
     "One time Purchased", "Basic Design",
@@ -47,10 +49,10 @@ export default function Pricing() {
             text-primary/ text-[#22293e]
             ">{title}</h3>
             </div>
-            <ul>
+            <ul className='flex flex-col gap-2'>
             { array.map((list, i)=>{
-              return (<li className='text-xl' key={i}>
-                {list}
+              return (<li className='text-xl flex gap-3 items-center' key={i}>
+               <span><FiCheck className='text-primary text-2xl'/></span> {list}
               </li>)
             })}
             </ul>
@@ -82,20 +84,21 @@ export default function Pricing() {
         return (
           <div 
           className="CARD group border-primary bg-dark-blue border- 
-          border-spacing-5 p-4 rounded-lg/ shadow-md 
+          border-spacing-5 p-4  shadow-md 
           hover:shadow-2xl transition-shadow duration-150 
           overflow-hidden flex flex-col gap-5 justify-center items-center 
-           min-h-[26rem] w-[19rem] 64 text-gray-200">
+           min-h-[26rem] w-[21rem] 64 text-gray-200">
           <div className="flex flex-col items-center mt-4">
             {/* <span className='text-center text-[#545572]'>untuk umkm dan person</span> */}
             <h3 className="text-3xl text-center font-black
-            text-primary/ text-[#22293e]/ text-secondary
+            text-primary/ text-[#22293e]/ text-white
             ">{title}</h3>
           </div>
-            <ul>
+            <ul className='flex flex-col gap-3'>
             { array.map((list, i)=>{
-              return (<li className='text-xl' key={i}>
-                {list}
+              return (<li className='text-xl flex gap-3' key={i}>
+               <span><FiCheck className='text-secondary text-2xl'/></span> {list}
+
               </li>)
             })}
             </ul>
@@ -120,8 +123,10 @@ export default function Pricing() {
     <div className="flex justify-center py-6">
     <h3 className="sub-title-primary">PRICING</h3>
     </div>
+    
     <div className="price-container 
-    flex flex-wrap justify-center items-center gap-5 xl:mx-16 xl:gap-16/">
+    flex flex-wrap justify-center items-center gap-3 gap-y-5 
+    xl:mx-[10rem]">
       <motion.div
        initial={{ opacity: 0, y: 15}}
        whileInView={{ opacity: 1, y: 0}}
@@ -136,7 +141,7 @@ export default function Pricing() {
       transition={{delay: 0.4, duration: 0.5}}
       viewport={{ once: true, amount: 0.6}}
       className="">
-        {Card("/3dwww.png", "Premium Landing Page", premiumLandingPage, "Rp.1500K")}
+        {CardCustom("/3dwww.png", "Premium Landing Page", premiumLandingPage, "Rp.1500K")}
       </motion.div>
         <motion.div
        initial={{ opacity: 0, y: 15}}

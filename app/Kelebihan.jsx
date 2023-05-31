@@ -58,7 +58,7 @@ export default function Kelebihan() {
       transition={{delay: 0.1, duration: 0.5}}
       viewport={{ once: true, amount: 0.6}}
       className="">
-                {Card("bounce","/3drocket.png", "Anti Lemot", "Bebas dari keterlambatan, jasa pembuatan website kami menawarkan kecepatan tanpa hambatan.")}
+                {Card("bounce","/ecommerce.png", "One Time Purchased", "Anda hanya perlu membeli website sekali seumur hidup tanpa ada biaya tambahan di tahun-tahun berikutnya. ")}
       </motion.div>
             <motion.div
        initial={{ opacity: 0, y: 15}}
@@ -66,7 +66,7 @@ export default function Kelebihan() {
       transition={{delay: 0.2, duration: 0.5}}
       viewport={{ once: true, amount: 0.6}}
       className="">
-                {Card("pulse","/3dwww.png", "SEO Friendly", "Mengoptimalkan peringkat pencarian, kami menciptakan website yang ramah SEO untuk keberhasilan online Anda.")}
+                {Card("pulse","/3dwww.png", "SEO Friendly", "Team kami mengoptimalkan fitur SEO, membuat website anda terlihat di google dan membantu anda mendapatkan lebih banyak pelanggan.")}
       </motion.div>
             <motion.div
        initial={{ opacity: 0, y: 15}}
@@ -74,7 +74,7 @@ export default function Kelebihan() {
       transition={{delay: 0.3, duration: 0.5}}
       viewport={{ once: true, amount: 0.6}}
       className="">
-                {Card("bounce","/responsive.png", "Responsive", "Tampil sempurna di setiap perangkat, desain responsif kami menjawab kebutuhan pengguna mobile.")}
+                {Card("bounce","/responsive.png", "Responsive", "Tampil sempurna di setiap perangkat, kami mendesain website yang responsive di setiap perangkat calon pelanggan anda .")}
       </motion.div>
             <motion.div
        initial={{ opacity: 0, y: 15}}
@@ -82,7 +82,7 @@ export default function Kelebihan() {
       transition={{delay: 0.4, duration: 0.5}}
       viewport={{ once: true, amount: 0.6}}
       className="">
-                {Card("pulse","/unique-design.png", "Design Premium", "Kesempurnaan visual, website dengan desain premium yang memukau akan meningkatkan citra merek Anda.")}
+                {Card("pulse","/unique-design.png", "Design Premium ", "Kami mendesain website yang beranimasi, unik dan berbeda untuk tiap pelanggan, No more template desain!.")}
       </motion.div>
             <motion.div
        initial={{ opacity: 0, y: 15}}
@@ -90,7 +90,15 @@ export default function Kelebihan() {
       transition={{delay: 0.5, duration: 0.5}}
       viewport={{ once: true, amount: 0.6}}
       className="">
-                {Card("spin","/maintenance.png", "Gratis Maintenance", "Lebih dari sekadar pembuatan, kami juga menyediakan layanan perawatan website yang andal.")}
+                {Card("spin","/maintenance.png", "Gratis Maintenance", "Lebih dari sekadar pembuatan, kami juga menyediakan layanan perawatan website yang dapat diandalkan sehingga anda tak perlu khawatir.")}
+      </motion.div>
+      <motion.div
+       initial={{ opacity: 0, y: 15}}
+       whileInView={{ opacity: 1, y: 0}}
+      transition={{delay: 0.7, duration: 0.5}}
+      viewport={{ once: true, amount: 0.6}}
+      className="">
+                {Card("bounce","/3drocket.png", "Anti Lemot", "Bebas dari keterlambatan, jasa pembuatan website kami menawarkan kecepatan tanpa hambatan.")}
       </motion.div>
       
             </div>

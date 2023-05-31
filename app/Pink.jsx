@@ -29,7 +29,8 @@ return (
     WEB IMPIANMU</h2>
     <p className=" text-center text-gray-500 py-5">Beritahukan kepada kami 
     goals dan website impian anda</p>
-    <div className="pink-container flex flex-col  gap-9 justify-center items-center">
+    <div className="pink-container flex flex-col 
+     gap-9 justify-center items-center px-2">
         <form onSubmit={CreateHandler} className="flex flex-col gap-3 py-">
             <label className="block" >
                 <input required onChange={(e)=> setName(e.target.value)} value={name}
