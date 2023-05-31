@@ -61,10 +61,10 @@ export default function Nav() {
     </label>
     </div>
     <nav className={`mt-2 md:mt-0 col-span-2 lg:px-9 md:col-span-1 md:ms-auto
-     text-md font-normal px-4 group-checked:bg-red-500 duration-500 transition-all text-center items-center gap-4 lg:flex
+     text-md font-semibold px-4 duration-300 transition-all text-center items-center gap-4 lg:flex
      ${click ? "hidden " :
     "click"} `}>
-     <Link className='' href={'/'}>Translate</Link>
+     {/* <Link className='' href={'/'}>Translate</Link> */}
      <Link href={'/'}>Tentang kami</Link>
      <Link href='#pink' scroll={false} className=''>
         { Button("Konsultasi Gratis")}

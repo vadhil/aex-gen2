@@ -11,13 +11,13 @@ html{
   scroll-behavior: smooth;
 }
 
-@font-face {
+/* @font-face {
   font-family: "Integral";
   src: url("/Demo_Fonts/Fontspring-DEMO-integralcf-extrabold.otf");
 }
 *, body {
   font-family: "Integral", sans-serif;
-}
+} */
 :root {
   --primary: #ffd9d9;
   --secondary: #5928e5;
@@ -39,8 +39,9 @@ html{
 }
 .sub-title-primary{
   @apply text-2xl md:text-2xl
-   lg:text-2xl text-primary font-black text-center leading-6 tracking-tighter
-}
+   lg:text-2xl text-primary font-black text-center leading-6 
+   tracking-tight
+  }
 .input-primary{
   @apply mt-1 block w-full p-3 tracking-tight
   text-primary placeholder:text-indigo-300 

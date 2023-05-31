@@ -1,4 +1,7 @@
+"use client"
+import { motion } from "framer-motion"
 import Image from "next/image"
+
 
 export default function Kelebihan() {
     const Card = (animate, src, title, content) => {
@@ -25,20 +28,71 @@ export default function Kelebihan() {
       }
   return (
     <section>
-        <div className="container-kelebihan-AEX 
+        <div
+        
+        className="container-kelebihan-AEX 
         py-16 flex flex-col justify-center items-center gap-9">
-           <div className="title-box flex flex-col text-center gap-3">
-            <h2 className="sub-title-primary px-[3rem]">
-                MENGAPA PILIH JASA PEMBUATAN WEBSITE AEX DIGITAL</h2>
-            <h3 className="lead text-lg lg:text-xl text-center px-[3rem] lg:px-[12rem] text-gray-700">
-                Kami tidak hanya fokus pada <span className="text-primary">jasa pembuatan website</span>, tetapi juga memberikan layanan modifikasi desain website yang dapat meningkatkan kinerja bisnis Anda di Indonesia</h3>
+           <div 
+           
+           className="title-box flex flex-col text-center gap-3">
+            <motion.h2
+              initial={{ opacity: 0, y: 15}}
+              whileInView={{ opacity: 1, y: 0}}
+             transition={{delay: 0.1, duration: 0.5}}
+             viewport={{ once: true, amount: 0.6}}
+            className="sub-title-primary px-[3rem]">
+                MENGAPA PILIH JASA PEMBUATAN WEBSITE AEX DIGITAL</motion.h2>
+            <motion.h3
+              initial={{ opacity: 0, y: 15}}
+              whileInView={{ opacity: 1, y: 0}}
+             transition={{delay: 0.2, duration: 0.5}}
+             viewport={{ once: true, amount: 0.6}}
+            className="lead text-lg lg:text-xl text-center px-[3rem] lg:px-[12rem] text-gray-700">
+                Kami tidak hanya fokus pada <span className="text-primary">jasa pembuatan website</span>, tetapi juga memberikan layanan modifikasi desain website yang dapat meningkatkan kinerja bisnis Anda di Indonesia</motion.h3>
         </div>
             <div className="card-box flex flex-wrap justify-center lg:mx-[10rem]  gap-3">
+               
+            <motion.div
+       initial={{ opacity: 0, y: 15}}
+       whileInView={{ opacity: 1, y: 0}}
+      transition={{delay: 0.1, duration: 0.5}}
+      viewport={{ once: true, amount: 0.6}}
+      className="">
                 {Card("bounce","/3drocket.png", "Anti Lemot", "Bebas dari keterlambatan, jasa pembuatan website kami menawarkan kecepatan tanpa hambatan.")}
+      </motion.div>
+            <motion.div
+       initial={{ opacity: 0, y: 15}}
+       whileInView={{ opacity: 1, y: 0}}
+      transition={{delay: 0.2, duration: 0.5}}
+      viewport={{ once: true, amount: 0.6}}
+      className="">
                 {Card("pulse","/3dwww.png", "SEO Friendly", "Mengoptimalkan peringkat pencarian, kami menciptakan website yang ramah SEO untuk keberhasilan online Anda.")}
+      </motion.div>
+            <motion.div
+       initial={{ opacity: 0, y: 15}}
+       whileInView={{ opacity: 1, y: 0}}
+      transition={{delay: 0.3, duration: 0.5}}
+      viewport={{ once: true, amount: 0.6}}
+      className="">
                 {Card("bounce","/responsive.png", "Responsive", "Tampil sempurna di setiap perangkat, desain responsif kami menjawab kebutuhan pengguna mobile.")}
+      </motion.div>
+            <motion.div
+       initial={{ opacity: 0, y: 15}}
+       whileInView={{ opacity: 1, y: 0}}
+      transition={{delay: 0.4, duration: 0.5}}
+      viewport={{ once: true, amount: 0.6}}
+      className="">
                 {Card("pulse","/unique-design.png", "Design Premium", "Kesempurnaan visual, website dengan desain premium yang memukau akan meningkatkan citra merek Anda.")}
+      </motion.div>
+            <motion.div
+       initial={{ opacity: 0, y: 15}}
+       whileInView={{ opacity: 1, y: 0}}
+      transition={{delay: 0.5, duration: 0.5}}
+      viewport={{ once: true, amount: 0.6}}
+      className="">
                 {Card("spin","/maintenance.png", "Gratis Maintenance", "Lebih dari sekadar pembuatan, kami juga menyediakan layanan perawatan website yang andal.")}
+      </motion.div>
+      
             </div>
     </div> 
     </section>
