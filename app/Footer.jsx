@@ -27,7 +27,7 @@ export default function Footer() {
               <Link href="https://www.aex.digital" passHref
         className="fw-light mx-auto font-light text-sm order-last md:order-2
          text-primary text-center self-end hover:text-secondary">
-            Copyright © 2023 by Smart English Training. Powered by AEX Digital. All right reserved
+            Copyright © 2023 Powered by AEX Digital. All right reserved
             </Link>
             
 

@@ -16,7 +16,6 @@ export const metadata = {
   name: "google-site-verification",
   content: "Y_v751NWo8VPjVfiV9Y7l3W8KmfBB3K7Qw2lWVjekBM"
 }
-
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className='scroll-smooth'>
