@@ -69,7 +69,7 @@ export default function Nav() {
      <Link href='#pink' scroll={false} className=''>
         { Button("Konsultasi Gratis")}
      </Link>
-     <Link href={'/Eng'} className='flex gap-3 top-[80%] md:top-[85%]/ -translate-x-7/ 
+     <Link href={'/Eng'}  className='flex gap-3 top-[80%] md:top-[85%]/ -translate-x-7/ 
                 translate-y-[-50%]/
                 right-12 text-md w-[4.8rem] rounded-full p-2 
                 bg-gray-400/ lg:bg-transparent shadow-inner

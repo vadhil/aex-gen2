@@ -90,7 +90,7 @@ export default function Pricing() {
             <h4 className='text-4xl font-black text-secondary'>{price}<span className='text-base'>/Lifetime</span></h4>
             </div>
             <div className="flex flex-col gap-3 items-center">
-            <Link href={"/Form"}>
+            <Link href={"/Eng/Form"}>
             <button className='button-primary'>Order Package</button>
             </Link>
             <span className='text-sm font-thin 
