@@ -22,7 +22,7 @@ export default function Pink() {
   };
 
   return (
-    <section className="bg-secondary py-16" id="pink">
+    <section className="bg-secondary py-16" id="EngPink">
       <div className="bg-secondary">
         <h2 className="sub-title-primary">FREE CONSULTATION TO CREATE <br /> YOUR DREAM WEBSITE</h2>
         <p className="text-center text-gray-500 py-5">Tell us your goals and your dream website</p>

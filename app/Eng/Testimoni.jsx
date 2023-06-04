@@ -22,7 +22,7 @@ export default function Testimoni() {
     },
     { title: "Professional",
     content: "With a low investment, my business looks more professional. Great!",
-    person: "Fahrizal, UMKM Owner Makassar"
+    person: "Fahrizal, Small Business Owner Makassar"
     },
     { title: "Go International",
     content: "My customers and clients are now not only limited to Indonesia.",

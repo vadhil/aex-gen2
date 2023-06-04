@@ -62,7 +62,7 @@ export default function Nav() {
     "click"} `}>
      {/* <Link className='' href={'/'}>Translate</Link> */}
      <Link href={'/'}>About</Link>
-     <Link href='#pink' scroll={false} className=''>
+     <Link href='#EngPink' scroll={false} className=''>
         { Button("Free Consult")}
      </Link>
      <Link href={'/'} passHref className='flex gap-3 top-[80%] md:top-[85%]/ -translate-x-7/ 
