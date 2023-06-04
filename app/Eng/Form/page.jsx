@@ -5,6 +5,7 @@ import {  useState } from "react";
 // import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { useRouter } from "next/navigation";
+import Nav from "../Nav";
 
 
 export default function Form() {
@@ -33,13 +34,14 @@ export default function Form() {
   return (
     <section className='flex justify-center pt-20
     text-primary bg-primary '>
+      <Nav />
         <div className='card gri shadow-2xl px-8 py-10 bg-white mt-4 mb-4 rounded-2xl border'>
             <h1 className='text-4xl mb-7 font-black text-primary text-center'>
             Form Pendaftaran</h1>
             <form className='flex flex-col gap-3' action="" onSubmit={handleCreate}>
             
             <label class="block">
-                <span class="text-gray-700">Nama Lengkap</span>
+                <span class="text-gray-700">Full Name</span>
                 <input required onChange={(e)=> setName(e.target.value)} value={name}
                   type="text"
                   class="
@@ -56,7 +58,7 @@ export default function Form() {
                 />
               </label>
               <label class="block">
-                <span class="text-gray-700">Email</span>
+                <span class="text-gray-700">Email Address</span>
                 <input required onChange={(e)=> setEmail(e.target.value)} value={email}
                   type="email"
                   class="
@@ -74,7 +76,7 @@ export default function Form() {
               </label>
  
             <label class="block">
-                <span class="text-gray-700">Nomor Handphone</span>
+                <span class="text-gray-700">Handphone</span>
                 <input required onChange={(e)=> setNumber(e.target.value)} value={number}
                   type="text"
                   class="
@@ -91,7 +93,7 @@ export default function Form() {
                 />
               </label>
                 <label class="block">
-                <span class="text-gray-700">Paket Website</span>
+                <span class="text-gray-700">Website Package</span>
                 <select required
                 onChange={(e)=> setGetInfo(e.target.value)} value={getInfo}
                   class="
@@ -106,13 +108,13 @@ export default function Form() {
                   ">
                   <option >Landing Page</option>
                   <option >Premium Landing Page</option>
-                  <option >Undangan</option>
+                  <option >Invitation</option>
                   {/* <option >E-Commerce</option> */}
                   <option >Custom</option>
                 </select>
               </label>
                 <label class="block">
-                <span class="text-gray-700">Tahu AEX Digital dari?</span>
+                <span class="text-gray-700">Know AEX Digital from?</span>
                 <select required
                 onChange={(e)=> setGetInfo(e.target.value)} value={getInfo}
                   class="
@@ -127,7 +129,7 @@ export default function Form() {
                   ">
                   <option >Website</option>
                   <option >Instagram</option>
-                  <option >Teman/keluarga</option>
+                  <option >Friend/Family</option>
                 </select>
               </label>
                 {/* <label class="block">
@@ -151,7 +153,7 @@ export default function Form() {
               </label> */}
                 <button 
                 className='button-primary mt-4'>
-                kirim</button>
+                Send</button>
             </form>
             <button 
                 className='bg-red-20 px- p- 
