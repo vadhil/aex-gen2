@@ -4,7 +4,7 @@ import Image from "next/image"
 
 
 export default function Kelebihan() {
-    const Card = (animate, src, title, content) => {
+    const Card = (alt, animate, src, title, content) => {
         return (
           <div className="CARD group border-primary border- 
           border-spacing-5 p-4/ rounded-lg shadow-md hover:shadow-xl z-10
@@ -15,7 +15,7 @@ export default function Kelebihan() {
           <Image width={130} height={130} src={src} 
           className={`mx-auto p-5 group-hover:animate-bounce
            transition-all  duration-300 animate-bounce/
-            ease-in delay-100`} alt="" />
+            ease-in delay-100`} alt={alt} />
             </div>
           <div className="text-card p-4 flex flex-col absolute 
           justify-center items-center/ top-[7rem] text-center  ">
@@ -58,7 +58,7 @@ export default function Kelebihan() {
       transition={{delay: 0.1, duration: 0.5}}
       viewport={{ once: true, amount: 0.6}}
       className="">
-                {Card("bounce","/ecommerce.png", "One Time Purchased", "Anda hanya perlu membeli website sekali seumur hidup tanpa ada biaya tambahan di tahun-tahun berikutnya. ")}
+                {Card("pembayaran sekali seumur hidup", "bounce","/ecommerce.png", "One Time Purchased", "Anda hanya perlu membeli website sekali seumur hidup tanpa ada biaya tambahan di tahun-tahun berikutnya. ")}
       </motion.div>
             <motion.div
        initial={{ opacity: 0, y: 15}}
@@ -66,7 +66,7 @@ export default function Kelebihan() {
       transition={{delay: 0.2, duration: 0.5}}
       viewport={{ once: true, amount: 0.6}}
       className="">
-                {Card("pulse","/3dwww.png", "SEO Friendly", "Team kami mengoptimalkan fitur SEO, membuat website anda terlihat di google dan membantu anda mendapatkan lebih banyak pelanggan.")}
+                {Card("SEO Friendly memudahkan indeks google","pulse","/3dwww.png", "SEO Friendly", "Team kami mengoptimalkan fitur SEO, membuat website anda terlihat di google dan membantu anda mendapatkan lebih banyak pelanggan.")}
       </motion.div>
             <motion.div
        initial={{ opacity: 0, y: 15}}
@@ -74,7 +74,7 @@ export default function Kelebihan() {
       transition={{delay: 0.3, duration: 0.5}}
       viewport={{ once: true, amount: 0.6}}
       className="">
-                {Card("bounce","/responsive.png", "Responsive", "Tampil sempurna di setiap perangkat, kami mendesain website yang responsive di setiap perangkat calon pelanggan anda .")}
+                {Card("Responsive di semua jenis perangkat","bounce","/responsive.png", "Responsive", "Tampil sempurna di setiap perangkat, kami mendesain website yang responsive di setiap perangkat calon pelanggan anda .")}
       </motion.div>
             <motion.div
        initial={{ opacity: 0, y: 15}}
@@ -82,7 +82,7 @@ export default function Kelebihan() {
       transition={{delay: 0.4, duration: 0.5}}
       viewport={{ once: true, amount: 0.6}}
       className="">
-                {Card("pulse","/unique-design.png", "Design Premium ", "Kami mendesain website yang beranimasi, unik dan berbeda untuk tiap pelanggan, No more template desain!.")}
+                {Card("Design yang elegan dan Premium","pulse","/unique-design.png", "Design Premium ", "Kami mendesain website yang beranimasi, unik dan berbeda untuk tiap pelanggan, No more template desain!.")}
       </motion.div>
             <motion.div
        initial={{ opacity: 0, y: 15}}
@@ -90,7 +90,7 @@ export default function Kelebihan() {
       transition={{delay: 0.5, duration: 0.5}}
       viewport={{ once: true, amount: 0.6}}
       className="">
-                {Card("spin","/maintenance.png", "Gratis Maintenance", "Lebih dari sekadar pembuatan, kami juga menyediakan layanan perawatan website yang dapat diandalkan sehingga anda tak perlu khawatir.")}
+                {Card("fitur maintenance","spin","/maintenance.png", "Gratis Maintenance", "Lebih dari sekadar pembuatan, kami juga menyediakan layanan perawatan website yang dapat diandalkan sehingga anda tak perlu khawatir.")}
       </motion.div>
       <motion.div
        initial={{ opacity: 0, y: 15}}
@@ -98,7 +98,7 @@ export default function Kelebihan() {
       transition={{delay: 0.7, duration: 0.5}}
       viewport={{ once: true, amount: 0.6}}
       className="">
-                {Card("bounce","/3drocket.png", "Anti Lemot", "Bebas dari keterlambatan, jasa pembuatan website kami menawarkan kecepatan tanpa hambatan.")}
+                {Card("Kencang dan anti lemot","bounce","/3drocket.png", "Anti Lemot", "Website yang ringan dan cepat, performa web maksimal untuk kenyamanan pengguna")}
       </motion.div>
       
             </div>

@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 
 export default function Kelebihan() {
-  const Card = (animate, src, title, content) => {
+  const Card = (alt, animate, src, title, content) => {
     return (
       <div className="CARD group border-primary border- 
           border-spacing-5 p-4/ rounded-lg shadow-md hover:shadow-xl z-10
@@ -13,7 +13,7 @@ export default function Kelebihan() {
         <div className={`img-card rounded-full py-5 flex /group-hover:animate-${animate}`}>
           <Image width={130} height={130} src={src} className={`mx-auto p-5 group-hover:animate-bounce
           transition-all  duration-300 animate-bounce/
-          ease-in delay-100`} alt="" />
+          ease-in delay-100`} alt={alt} />
         </div>
         <div className="text-card p-4 flex flex-col absolute 
           justify-center items-center/ top-[7rem] text-center  ">
@@ -57,7 +57,7 @@ export default function Kelebihan() {
             transition={{ delay: 0.1, duration: 0.5 }}
             viewport={{ once: true, amount: 0.6 }}
             className="">
-            {Card("bounce", "/ecommerce.png", "One Time Purchased", "You only need to buy the website once for a lifetime without any additional costs in the following years.")}
+            {Card("one time purchased for a lifetime","bounce", "/ecommerce.png", "One Time Purchased", "You only need to buy the website once for a lifetime without any additional costs in the following years.")}
           </motion.div>
 
           <motion.div
@@ -66,7 +66,7 @@ export default function Kelebihan() {
             transition={{ delay: 0.2, duration: 0.5 }}
             viewport={{ once: true, amount: 0.6 }}
             className="">
-            {Card("pulse", "/3dwww.png", "SEO Friendly", "Our team optimizes SEO features, making your website visible on Google and helping you get more customers.")}
+            {Card("seo friendly","pulse", "/3dwww.png", "SEO Friendly", "Our team optimizes SEO features, making your website visible on Google and helping you get more customers.")}
           </motion.div>
 
           <motion.div
@@ -75,7 +75,7 @@ export default function Kelebihan() {
             transition={{ delay: 0.3, duration: 0.5 }}
             viewport={{ once: true, amount: 0.6 }}
             className="">
-            {Card("bounce", "/responsive.png", "Responsive", "Look perfect on every device, we design websites that are responsive on every device for your potential customers.")}
+            {Card("responsive in every screen","bounce", "/responsive.png", "Responsive", "Look perfect on every device, we design websites that are responsive on every device for your potential customers.")}
           </motion.div>
 
           <motion.div
@@ -84,7 +84,7 @@ export default function Kelebihan() {
             transition={{ delay: 0.4, duration: 0.5 }}
             viewport={{ once: true, amount: 0.6 }}
             className="">
-            {Card("pulse", "/unique-design.png", "Premium Design", "We design animated, unique, and different websites for each customer, no more design templates!")}
+            {Card("premium and elegant design","pulse", "/unique-design.png", "Premium Design", "We design animated, unique, and different websites for each customer, no more design templates!")}
           </motion.div>
 
           <motion.div
@@ -93,7 +93,7 @@ export default function Kelebihan() {
             transition={{ delay: 0.5, duration: 0.5 }}
             viewport={{ once: true, amount: 0.6 }}
             className="">
-            {Card("spin", "/maintenance.png", "Free Maintenance", "More than just creation, we also provide reliable website maintenance services so you don't have to worry.")}
+            {Card("maintenance feature","spin", "/maintenance.png", "Free Maintenance", "More than just creation, we also provide reliable website maintenance services so you don't have to worry.")}
           </motion.div>
 
           <motion.div
@@ -102,7 +102,7 @@ export default function Kelebihan() {
             transition={{ delay: 0.7, duration: 0.5 }}
             viewport={{ once: true, amount: 0.6 }}
             className="">
-            {Card("bounce", "/3drocket.png", "Lag-Free", "Free from delays, our website creation service offers unhindered speed.")}
+            {Card("fast and lag free","bounce", "/3drocket.png", "Lag-Free", "A lightweight and fast website, optimal web performance for user comfort.")}
           </motion.div>
 
         </div>
