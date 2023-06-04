@@ -30,17 +30,17 @@ export default function Nav() {
     // useEffect(()=>{
     //   }, [click])
     let transparent = ` ${click ? "bg-transparent" : "bg-white delay-0 duration-0"} fixed
-    top-0 text-white w-screen duration-150 transition-all ease-in
+    top-0 text-white w-screen duration-150 transition-all ease-in z-50
     py-8 h-[6rem] lg:h-[7rem]`
     let real = `bg-white shadow fixed duration-150 transition-all ease-in
-    py-8 top-0 h-[6rem]  lg:h-[7rem] text-primary w-screen
+    py-8 top-0 h-[6rem]  lg:h-[7rem] text-primary w-screen z-50
     ` 
 
 
   return (
     // <section className={sofia.className}>
     <header className={color? real : transparent}>
-     <div className="grid grid-cols-2 justify-around /justify-stretch px-  items-center">
+     <div className="grid grid-cols-2 justify-around /justify-stretch z-50 px-  items-center">
     <div className={`logo title ${color? 'text-primary': 'text-secondary'} 
      font-black px-4 lg:px-9 text-2xl lg:text-3xl  `}>
       <Link className='z-100' href={'/'}><h2>AEX</h2></Link>
@@ -64,8 +64,7 @@ export default function Nav() {
      text-md font-semibold px-4 duration-300 transition-all text-center items-center gap-4 lg:flex
      ${click ? "hidden " :
     "click"} `}>
-     {/* <Link className='' href={'/'}>Translate</Link> */}
-     <Link href={'/'}>Tentang kami</Link>
+     {/* <Link href={'/'}>Tentang kami</Link> */}
      <Link href='#pink' scroll={false} className=''>
         { Button("Konsultasi Gratis")}
      </Link>

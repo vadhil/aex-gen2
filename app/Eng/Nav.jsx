@@ -27,10 +27,10 @@ export default function Nav() {
     // useEffect(()=>{
     //   }, [click])
     let transparent = ` ${click ? "bg-transparent" : "bg-white delay-0 duration-0"} fixed
-    top-0 text-white w-screen duration-150 transition-all ease-in
+    top-0 text-white w-screen duration-150 transition-all ease-in z-50
     py-8 h-[6rem] lg:h-[7rem]`
     let real = `bg-white shadow fixed duration-150 transition-all ease-in
-    py-8 top-0 h-[6rem]  lg:h-[7rem] text-primary w-screen
+    py-8 top-0 h-[6rem]  lg:h-[7rem] text-primary w-screen z-50
     ` 
 
 
@@ -47,13 +47,10 @@ export default function Nav() {
     <input onClick={()=> setClick(!click)} type="checkbox"
      className={`${styles.navigation__checkbox}`} 
     id="navi-toggle"/>
-     {/* <button type='checkbox' className={` ${styles.navigation__checkbox}`} 
-     id="navi-toggler"
-     onClick={()=> setClick(!click)}/> */}
-     {/* </button> */}
+    
     <label for="navi-toggle" className={styles.navigation__button}>
         <span className={styles.navigation__icon}>&nbsp;</span>
-      {/* menu */}
+   
     </label>
     </div>
     <nav className={`mt-2 md:mt-0 col-span-2 lg:px-9 md:col-span-1 md:ms-auto
@@ -61,7 +58,7 @@ export default function Nav() {
      ${click ? "hidden " :
     "click"} `}>
      {/* <Link className='' href={'/'}>Translate</Link> */}
-     <Link href={'/'}>About</Link>
+     {/* <Link href={'/'}>About</Link> */}
      <Link href='#EngPink' scroll={false} className=''>
         { Button("Free Consult")}
      </Link>
