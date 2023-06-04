@@ -1,5 +1,5 @@
 // import { Analytics } from '@vercel/analytics/react';
-// import Footer from './Footer'
+import Footer from '../Footer'
 import Nav from './Nav'
 import { Albert_Sans} from 'next/font/google'
 const albert = Albert_Sans({ subsets: ['latin'] })
@@ -18,7 +18,7 @@ export default function Layout({ children }) {
         <main className='relative'>
         <Nav />
         {children}
-        {/* <Footer/> */}
+        <Footer/>
         {/* <Analytics /> */}
         </main>
         </body>

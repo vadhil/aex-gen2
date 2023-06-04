@@ -43,7 +43,7 @@ export default function Testimoni() {
       <div className="py-5 flex flex-col justify-center items-center mx-auto gap-5 md:gap-10 px-6 md:px-36">
         <div className="px-5 md:px-12 pt-2 order-2">
             <p className='text-xl text-center md:text-center'>
-              More than dozens of businesses have successfully grown with us. Don't hesitate to make your business <span className='font-semibold'>one of them!</span>
+              More than dozens of businesses have successfully grown with us. Don&apos;t hesitate to make your business <span className='font-semibold'>one of them!</span>
             </p>
         </div>
         <div className="carousel-section order-1 mx-auto flex justify-center">

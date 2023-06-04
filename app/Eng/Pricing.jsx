@@ -34,16 +34,9 @@ export default function Pricing() {
           hover:shadow-2xl transition-shadow duration-150 
           overflow-hidden flex flex-col gap-5 justify-center items-center 
            min-h-[26rem] w-[19rem] 64 bg-white">
-          {/* <div className="img-card rounded-full py-5 flex">
-          <Image width={130} height={130} src={src} 
-          className="mx-auto p-5 group-hover:animate-pulse
-           transition-all hover:animate-pulse duration-300 ease-in delay-100 
-          " alt="" />
-            </div> */}
-          {/* <div className="text-card p-4 flex flex-col  
-          justify-center items-center/ bg-slate-200/"> */}
+  
           <div className="flex flex-col items-center mt-4">
-            {/* <span className='text-center text-[#545572]'>for micro, small, and medium businesses</span> */}
+         
             <h3 className="text-3xl text-center font-black
             text-primary/ text-[#22293e]
             ">{title}</h3>
@@ -94,7 +87,7 @@ export default function Pricing() {
             })}
             </ul>
             <div className="">
-            <h4 className='text-4xl font-black text-secondary'>{price}</h4>
+            <h4 className='text-4xl font-black text-secondary'>{price}<span className='text-base'>/Lifetime</span></h4>
             </div>
             <div className="flex flex-col gap-3 items-center">
             <Link href={"/Form"}>
