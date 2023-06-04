@@ -1,13 +1,9 @@
-import { Analytics } from '@vercel/analytics/react';
-import Footer from './Footer'
-// import Nav from './Nav'
-import './globals.css'
+// import { Analytics } from '@vercel/analytics/react';
+// import Footer from './Footer'
+import Nav from './Nav'
 import { Albert_Sans} from 'next/font/google'
-// import { Sofia_Sans, Montserrat} from 'next/font/google'
-
 const albert = Albert_Sans({ subsets: ['latin'] })
-// const sofia = Sofia_Sans({ subsets: ['latin'] })
-// const montserrat = Montserrat({ subsets: ['latin'] })
+
 
 export const metadata = {
   title: 'AEX Digital - Jasa Pembuatan Website Terpercaya',
@@ -15,15 +11,15 @@ export const metadata = {
   name: "google-site-verification",
   content: "Y_v751NWo8VPjVfiV9Y7l3W8KmfBB3K7Qw2lWVjekBM"
 }
-export default function RootLayout({ children }) {
+export default function Layout({ children }) {
   return (
     <html lang="en" className='scroll-smooth'>
       <body className={albert.className}>
-        {/* <Header /> */}
         <main className='relative'>
+        <Nav />
         {children}
-        <Footer/>
-        <Analytics />
+        {/* <Footer/> */}
+        {/* <Analytics /> */}
         </main>
         </body>
     </html>

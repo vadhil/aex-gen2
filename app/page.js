@@ -8,6 +8,8 @@ import Pricing from "./Pricing";
 import Choose from "./Choose";
 import Kelebihan from "./Kelebihan";
 import Testimoni from "./Testimoni";
+import CardImport from "./components/NikeCard";
+import Nav from "./Nav";
 
 export default function Home() {
  
@@ -15,10 +17,12 @@ export default function Home() {
   
   return (
       <>
+        <Nav/>
         <Hero />
        {/* <CtaCard/> */}
        <Kelebihan />
        <Pricing />
+       {/* <CardImport /> */}
        <Testimoni />
        <Pink />
        <Pertanyaan/>

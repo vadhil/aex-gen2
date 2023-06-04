@@ -19,8 +19,10 @@ html{
   font-family: "Integral", sans-serif;
 } */
 :root {
-  --primary: #ffd9d9;
-  --secondary: #5928e5;
+  --primary: #5928e5;
+  --secondary: #ffd9d9;
+  --dark-blue: #22293e;
+  --light-blue : #545572;
 }
 .justify-items-end{
   justify-items: end;

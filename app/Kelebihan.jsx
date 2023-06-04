@@ -48,7 +48,7 @@ export default function Kelebihan() {
              transition={{delay: 0.2, duration: 0.5}}
              viewport={{ once: true, amount: 0.6}}
             className="lead text-lg lg:text-xl text-center px-[3rem] lg:px-[12rem] text-gray-700">
-                Kami tidak hanya fokus pada <span className="text-primary">jasa pembuatan website</span>, tetapi juga memberikan layanan modifikasi desain website yang dapat meningkatkan kinerja bisnis Anda di Indonesia</motion.h3>
+                Kami tidak hanya fokus pada <span className="text-primary">jasa pembuatan website</span>, tetapi juga memberikan layanan modifikasi desain website yang dapat meningkatkan kinerja bisnis Anda.</motion.h3>
         </div>
             <div className="card-box flex flex-wrap justify-center lg:mx-[10rem]  gap-3">
                
